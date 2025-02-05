@@ -1,0 +1,56 @@
+@mixin section-text {
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin: 0 auto;
+}
+
+@mixin section-text1024 {
+    font-size: 0.88rem;
+}
+
+@mixin section-text768 {
+    font-size: 0.8rem;
+}
+
+@mixin section-small-text {
+    color: $additional-color;
+    font-weight: 300;
+}
+
+@mixin section-small-text1024 {
+    font-size: 0.88rem;
+}
+
+@mixin section-small-text768 {
+    font-size: 0.8rem;
+}
+
+@mixin dishes-before($bg-color, $content) {
+    position: absolute;
+    content: $content;
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    background-color: $bg-color;
+    top: -25px;
+    left: -25px;
+    color: #FFF;
+    font-size: 0.56rem;
+    font-weight: 600;
+    line-height: 58px;
+    text-align: center;
+}
+
+@mixin dishes-before1024($bg-color, $content) {
+    width: 46px;
+    height: 46px;
+    font-size: 0.48rem;
+    line-height: 46px;
+}
+
+@mixin dishes-before768($bg-color, $content) {
+    width: 56px;
+    height: 56px;
+    font-size: 0.56rem;
+    line-height: 56px;
+}

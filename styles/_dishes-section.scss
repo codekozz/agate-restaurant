@@ -1,0 +1,21 @@
+.dishes-section {
+    &__description {
+        @include section-small-text;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .dishes-section {
+        &__description {
+            @include section-small-text1024;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .dishes-section {
+        &__description {
+            @include section-small-text768;
+        }
+    }
+}

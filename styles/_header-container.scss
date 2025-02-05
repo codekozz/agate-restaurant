@@ -1,0 +1,33 @@
+ .header-container {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     flex-wrap: wrap;
+     max-width: 1189px;
+     padding: 44px 0 45px;
+     margin: 0 auto;
+ }
+ 
+ @media screen and (max-width: 1440px) {
+     .header-container {
+         padding: 44px 36px 45px;
+     }
+ }
+ 
+ @media screen and (max-width: 1024px) {
+     .header-container {
+         padding: 13px 36px;
+     }
+ }
+ 
+ @media screen and (max-width: 768px) {
+     .header-container {
+         padding: 8px 18px;
+     }
+ }
+ 
+ @media screen and (max-width: 600px) {
+     .header-container {
+         flex-direction: column;
+     }
+ }

@@ -1,0 +1,36 @@
+.link {
+    text-decoration: none;
+    font-size: 0.8rem;
+    font-weight: 600;
+    display: block;
+    transition: all 1s;
+    width: 312px;
+    height: 60px;
+    margin: 0 auto;
+    line-height: 60px;
+    border-radius: 30px;
+    border-width: 2px;
+    border-style: solid;
+    &--white {
+        color: $secondary-color;
+        border-color: $secondary-color;
+    }
+    &--black {
+        color: $main-color;
+        border-color: $main-color;
+    }
+    &:hover {
+        background-color: $hover-color;
+        border: none;
+        color: $secondary-color;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .link {
+        font-size: 0.68rem;
+        width: 248px;
+        height: 48px;
+        line-height: 48px;
+    }
+}

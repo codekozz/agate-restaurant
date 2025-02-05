@@ -1,0 +1,26 @@
+.dishes {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 60px 0;
+    justify-content: center;
+}
+
+@media screen and (max-width: 1440px) {
+    .dishes {
+        padding: 0 20px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .dishes {
+        margin: 48px 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .dishes {
+        flex-direction: column;
+        margin: 58px 0 48px;
+        align-items: center;
+    }
+}

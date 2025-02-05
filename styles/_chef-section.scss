@@ -1,0 +1,60 @@
+.chef-section {
+    background-color: $background-color;
+    &__photo {
+        margin: 0 auto 30px;
+        img {
+            width: 100%;
+            max-width: 398px;
+        }
+    }
+    &__text {
+        max-width: 939px;
+        &:first-of-type {
+            @include section-small-text;
+            margin: 0 auto 30px;
+        }
+        &:nth-of-type(2) {
+            @include section-text;
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .chef-section {
+        &__photo {
+            img {
+                max-width: 282px;
+            }
+        }
+        &__text {
+            max-width: 691px;
+            &:first-of-type {
+                @include section-small-text1024;
+            }
+            &:nth-of-type(2) {
+                @include section-text1024;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .chef-section {
+        &__photo {
+            margin: 0 auto 20px;
+            img {
+                max-width: 251px;
+            }
+        }
+        &__text {
+            max-width: 691px;
+            &:first-of-type {
+                @include section-small-text768;
+                margin: 0 auto 20px;
+            }
+            &:nth-of-type(2) {
+                @include section-text768;
+            }
+        }
+    }
+}

@@ -1,0 +1,20 @@
+.social-links {
+    &__item {
+        width: 50px;
+        height: 50px;
+        display: inline-block;
+        line-height: 50px;
+        background-color: $secondary-color;
+        border-radius: 50%;
+        i {
+            transition: all 1s;
+            color: #262626;
+        }
+        i:hover {
+            transform: rotate(360deg);
+        }
+    }
+    &__item:not(:last-child) {
+        margin-right: 40px;
+    }
+}

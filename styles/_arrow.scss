@@ -1,0 +1,26 @@
+.arrow {
+    position: fixed;
+    opacity: .3;
+    right: 20px;
+    bottom: 19px;
+    background-color: #FFAC1C;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    transition: all .8s;
+    &:hover {
+        opacity: .95;
+        transform: scale(1.2);
+    }
+    &::after {
+        content: " ";
+        position: absolute;
+        top: 28px;
+        left: 21px;
+        width: 28px;
+        height: 20px;
+        display: block;
+        background: url(../img/arrow.svg) no-repeat;
+        background-size: contain;
+    }
+}

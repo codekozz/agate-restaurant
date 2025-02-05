@@ -1,0 +1,25 @@
+.about-section {
+    background-color: $background-color;
+    &__text {
+        max-width: 941px;
+        @include section-text;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .about-section {
+        &__text {
+            max-width: 602px;
+            @include section-text1024;
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .about-section {
+        &__text {
+            max-width: 541px;
+            @include section-text768;
+        }
+    }
+}

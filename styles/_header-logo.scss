@@ -1,0 +1,16 @@
+.header-logo {
+    &__link {
+        color: $secondary-color;
+        text-decoration: none;
+        font-size: 2rem;
+        text-transform: uppercase;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .header-logo {
+        &__link {
+            font-size: 1.4rem;
+        }
+    }
+}
